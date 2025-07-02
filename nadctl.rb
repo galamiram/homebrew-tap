@@ -5,21 +5,21 @@
 class Nadctl < Formula
   desc "Control NAD audio receivers with CLI, TUI, and MCP server for LLM integration"
   homepage "https://github.com/galamiram/nadctl"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/galamiram/nadctl/releases/download/v1.2.0/nadctl_1.2.0_darwin_amd64.tar.gz"
-      sha256 "a9a9c5cd1f37135ed618503394c7afd683fcfc8e8c36d1ccdb97aae55c726506"
+      url "https://github.com/galamiram/nadctl/releases/download/v1.2.1/nadctl_1.2.1_darwin_amd64.tar.gz"
+      sha256 "b3f867a15653a883d7f958c7de8b77484e5f0c33f0c4d83410290267b829a922"
 
       def install
         bin.install "nadctl"
       end
     end
     on_arm do
-      url "https://github.com/galamiram/nadctl/releases/download/v1.2.0/nadctl_1.2.0_darwin_arm64.tar.gz"
-      sha256 "df5a6c15256e07bd7cb32fdb7b737ef0bbefc47a134db49f68b26f95cd61c2af"
+      url "https://github.com/galamiram/nadctl/releases/download/v1.2.1/nadctl_1.2.1_darwin_arm64.tar.gz"
+      sha256 "8578283290070d1324a1fd6d9763e1a09de35d04231a83d7b42e5f30e96672bb"
 
       def install
         bin.install "nadctl"
@@ -30,8 +30,8 @@ class Nadctl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/galamiram/nadctl/releases/download/v1.2.0/nadctl_1.2.0_linux_amd64.tar.gz"
-        sha256 "72539b16cc024a93aa99f4fa5238dc382726f3bfc9c7f050b2bc104110870edc"
+        url "https://github.com/galamiram/nadctl/releases/download/v1.2.1/nadctl_1.2.1_linux_amd64.tar.gz"
+        sha256 "f348719b907f7100538d9bbf8ec4c98380acc80cc009c9c2bd2fa965e125a496"
 
         def install
           bin.install "nadctl"
@@ -40,8 +40,8 @@ class Nadctl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/galamiram/nadctl/releases/download/v1.2.0/nadctl_1.2.0_linux_arm64.tar.gz"
-        sha256 "5646de691aaa2af3aa3093221fcfd13c3adbb88ab0fb92c8f629490317b822f0"
+        url "https://github.com/galamiram/nadctl/releases/download/v1.2.1/nadctl_1.2.1_linux_arm64.tar.gz"
+        sha256 "7d78cb4a56f3f8877845c30d6771db03c1909357b7e18840f37c269eef59ae39"
 
         def install
           bin.install "nadctl"
